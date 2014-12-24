@@ -2,6 +2,10 @@
 
 A test project for jis
 
+## Requirements
+
+leiningen
+
 ## Usage
 
 lein run
