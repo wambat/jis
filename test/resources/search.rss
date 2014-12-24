@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:yablogs="urn:yandex-blogs" xmlns:wfw="http://wellformedweb.org/CommentAPI/" version="2.0">
+  <channel>
+    <link>//blogs.yandex.ru/search.xml?text=scala</link>
+    <title>scala — Яндекс.Поиск по блогам</title>
+    <image>
+      <url>http://img.yandex.net/i/logo100x43.png</url>
+      <title>Поиск Яндекса по блогам</title>
+      <link>//blogs.yandex.ru/search.xml?text=scala</link>
+      <width>100</width>
+      <height>43</height>
+    </image>
+    <ttl>60</ttl>
+    <generator>blogs.yandex.ru</generator>
+    <webMaster>support@blogs.yandex.ru</webMaster>
+    <copyright>noindex</copyright>
+    <description>Результаты поиска Яндекса по блогам и форумам по запросу: «scala»</description>
+    <yablogs:count>1994</yablogs:count>
+    <yablogs:more>//blogs.yandex.ru/search.xml?text=scala&amp;p=1</yablogs:more>
+    <item>
+      <author>http://twitter.com/SyuzannaL</author>
+      <yablogs:author url="http://twitter.com/SyuzannaL">syuzannal</yablogs:author>
+      <title>
+
+это библиотека для Java а не для Scala</title>
+      <pubDate>Wed, 24 Dec 2014 10:39:12 GMT</pubDate>
+      <guid>http://twitter.com/SyuzannaL/statuses/547703028447322112</guid>
+      <link>http://twitter.com/SyuzannaL/statuses/547703028447322112</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2FSyuzannaL%2Fstatuses%2F547703028447322112&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/SyuzannaL">syuzannal</yablogs:journal>
+      <description>это библиотека для Java а не для &lt;b&gt;Scala&lt;/b&gt;</description>
+    </item>
+    <item>
+      <author>http://twitter.com/alexey_r</author>
+      <yablogs:author url="http://twitter.com/alexey_r">alexey_r</yablogs:author>
+      <title>
+
+Внезапный, словно гром среди ясного неба, свежий выпуск #eaxcast с @xeno_by о #Scala</title>
+      <pubDate>Wed, 24 Dec 2014 10:09:09 GMT</pubDate>
+      <guid>http://twitter.com/alexey_r/statuses/547695464263331840</guid>
+      <link>http://twitter.com/alexey_r/statuses/547695464263331840</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2Falexey_r%2Fstatuses%2F547695464263331840&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/alexey_r">alexey_r</yablogs:journal>
+      <description>RT &lt;ns0:user name="sum3rman" server="twitter.com"&gt;@sum3rman&lt;/ns0:user&gt;: Внезапный, словно гром среди ясного неба, свежий выпуск &lt;ns0:tag name="eaxcast" server="twitter.com"&gt;#eaxcast&lt;/ns0:tag&gt; с &lt;ns0:user name="xeno_by" server="twitter.com"&gt;@xeno_by&lt;/ns0:user&gt; о &lt;ns0:tag name="Scala" server="twitter.com"&gt;#&lt;b&gt;Scala&lt;/b&gt;&lt;/ns0:tag&gt;, макросах &lt;a href="http://t.co/FTG5EMDQly" xhref="http://eax.me/eaxcast-s02e10/"&gt;eax.me/eaxcast-s02e10/&lt;/a&gt; /cc &lt;ns0:user name="afiskon" server="twitter.com"&gt;@afiskon&lt;/ns0:user&gt;</description>
+    </item>
+    <item>
+      <author>http://twitter.com/alexey_r</author>
+      <yablogs:author url="http://twitter.com/alexey_r">alexey_r</yablogs:author>
+      <title>
+ Делаем метрики и мониторинг для Akka при помощи Kamon eax.me/akka-kamon/ #akka #</title>
+      <pubDate>Wed, 24 Dec 2014 10:08:39 GMT</pubDate>
+      <guid>http://twitter.com/alexey_r/statuses/547695342095835136</guid>
+      <link>http://twitter.com/alexey_r/statuses/547695342095835136</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2Falexey_r%2Fstatuses%2F547695342095835136&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/alexey_r">alexey_r</yablogs:journal>
+      <description>RT &lt;ns0:user name="afiskon" server="twitter.com"&gt;@afiskon&lt;/ns0:user&gt;: Делаем метрики и мониторинг для Akka при помощи Kamon &lt;a href="http://t.co/69Yh2HOMyX" xhref="http://eax.me/akka-kamon/"&gt;eax.me/akka-kamon/&lt;/a&gt; &lt;ns0:tag name="akka" server="twitter.com"&gt;#akka&lt;/ns0:tag&gt; &lt;ns0:tag name="scala" server="twitter.com"&gt;#&lt;b&gt;scala&lt;/b&gt;&lt;/ns0:tag&gt; &lt;ns0:tag name="kamon" server="twitter.com"&gt;#kamon&lt;/ns0:tag&gt; &lt;ns0:tag name="datadog" server="twitter.com"&gt;#datadog&lt;/ns0:tag&gt; &lt;ns0:tag name="fprog" server="twitter.com"&gt;#fprog&lt;/ns0:tag&gt;</description>
+    </item>
+    <item>
+      <author>http://twitter.com/ovgolovin</author>
+      <yablogs:author url="http://twitter.com/ovgolovin">ovgolovin</yablogs:author>
+      <title>
+ Делаем метрики и мониторинг для Akka при помощи Kamon eax.me/akka-kamon/ #akka #</title>
+      <pubDate>Wed, 24 Dec 2014 09:59:39 GMT</pubDate>
+      <guid>http://twitter.com/ovgolovin/statuses/547693076085751808</guid>
+      <link>http://twitter.com/ovgolovin/statuses/547693076085751808</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2Fovgolovin%2Fstatuses%2F547693076085751808&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/ovgolovin">ovgolovin</yablogs:journal>
+      <description>RT &lt;ns0:user name="afiskon" server="twitter.com"&gt;@afiskon&lt;/ns0:user&gt;: Делаем метрики и мониторинг для Akka при помощи Kamon &lt;a href="http://t.co/69Yh2HOMyX" xhref="http://eax.me/akka-kamon/"&gt;eax.me/akka-kamon/&lt;/a&gt; &lt;ns0:tag name="akka" server="twitter.com"&gt;#akka&lt;/ns0:tag&gt; &lt;ns0:tag name="scala" server="twitter.com"&gt;#&lt;b&gt;scala&lt;/b&gt;&lt;/ns0:tag&gt; &lt;ns0:tag name="kamon" server="twitter.com"&gt;#kamon&lt;/ns0:tag&gt; &lt;ns0:tag name="datadog" server="twitter.com"&gt;#datadog&lt;/ns0:tag&gt; &lt;ns0:tag name="fprog" server="twitter.com"&gt;#fprog&lt;/ns0:tag&gt;</description>
+    </item>
+    <item>
+      <author>http://twitter.com/afiskon</author>
+      <yablogs:author url="http://twitter.com/afiskon">afiskon</yablogs:author>
+      <title>
+ Интересно, почему противников implicit аргументов не смущает, например, неявная </title>
+      <pubDate>Wed, 24 Dec 2014 09:50:23 GMT</pubDate>
+      <guid>http://twitter.com/afiskon/statuses/547690743356481537</guid>
+      <link>http://twitter.com/afiskon/statuses/547690743356481537</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2Fafiskon%2Fstatuses%2F547690743356481537&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/afiskon">afiskon</yablogs:journal>
+      <description>Интересно, почему противников implicit аргументов не смущает, например, неявная передача полей классов во все методы? &lt;ns0:tag name="scala" server="twitter.com"&gt;#&lt;b&gt;scala&lt;/b&gt;&lt;/ns0:tag&gt; /cc: &lt;ns0:user name="SBozhko" server="twitter.com"&gt;@SBozhko&lt;/ns0:user&gt;</description>
+    </item>
+    <item>
+      <author>http://twitter.com/suhinini</author>
+      <yablogs:author url="http://twitter.com/suhinini">suhinini</yablogs:author>
+      <title>
+
+Хорошо поговорили с отдельными значимыми Scala личностями в Минске.</title>
+      <pubDate>Wed, 24 Dec 2014 08:20:40 GMT</pubDate>
+      <guid>http://twitter.com/suhinini/statuses/547668166219145216</guid>
+      <link>http://twitter.com/suhinini/statuses/547668166219145216</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2Fsuhinini%2Fstatuses%2F547668166219145216&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/suhinini">suhinini</yablogs:journal>
+      <description>Хорошо поговорили с отдельными значимыми &lt;b&gt;Scala&lt;/b&gt; личностями в Минске. Будем продвигать обучение &lt;b&gt;Scala&lt;/b&gt; в массы.</description>
+    </item>
+    <item>
+      <title>Известная исполнительница партии Кармен Анита Рачвелишвили выступила на сцене ... </title>
+      <pubDate>Wed, 24 Dec 2014 07:45:05 GMT</pubDate>
+      <guid>http://vk.com/wall-45323841_28429</guid>
+      <link>http://vk.com/wall-45323841_28429</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Fvk.com%2Fwall-45323841_28429&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://vk.com/actualnewsorg">actualnewsorg</yablogs:journal>
+      <description>
+
+Читать далее: http://actualnews.org/obshestvo/35058-izvestnaya-ispolnitelnica-partii-karmen-anita-rachvelishvili-vystupila-na-scene-moskovskoy-opery.html</description>
+    </item>
+    <item>
+      <author>http://twitter.com/t_reks</author>
+      <yablogs:author url="http://twitter.com/t_reks">t_reks</yablogs:author>
+      <title>
+ Делаем метрики и мониторинг для Akka при помощи Kamon eax.me/akka-kamon/ #akka #</title>
+      <pubDate>Wed, 24 Dec 2014 07:36:30 GMT</pubDate>
+      <guid>http://twitter.com/t_reks/statuses/547657051460354048</guid>
+      <link>http://twitter.com/t_reks/statuses/547657051460354048</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2Ft_reks%2Fstatuses%2F547657051460354048&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/t_reks">t_reks</yablogs:journal>
+      <description>RT &lt;ns0:user name="afiskon" server="twitter.com"&gt;@afiskon&lt;/ns0:user&gt;: Делаем метрики и мониторинг для Akka при помощи Kamon &lt;a href="http://t.co/69Yh2HOMyX" xhref="http://eax.me/akka-kamon/"&gt;eax.me/akka-kamon/&lt;/a&gt; &lt;ns0:tag name="akka" server="twitter.com"&gt;#akka&lt;/ns0:tag&gt; &lt;ns0:tag name="scala" server="twitter.com"&gt;#&lt;b&gt;scala&lt;/b&gt;&lt;/ns0:tag&gt; &lt;ns0:tag name="kamon" server="twitter.com"&gt;#kamon&lt;/ns0:tag&gt; &lt;ns0:tag name="datadog" server="twitter.com"&gt;#datadog&lt;/ns0:tag&gt; &lt;ns0:tag name="fprog" server="twitter.com"&gt;#fprog&lt;/ns0:tag&gt;</description>
+    </item>
+    <item>
+      <author>http://twitter.com/afiskon</author>
+      <yablogs:author url="http://twitter.com/afiskon">afiskon</yablogs:author>
+      <title>
+ Делаем метрики и мониторинг для Akka при помощи Kamon eax.me/akka-kamon/ #akka #</title>
+      <pubDate>Wed, 24 Dec 2014 07:17:37 GMT</pubDate>
+      <guid>http://twitter.com/afiskon/statuses/547652296721436672</guid>
+      <link>http://twitter.com/afiskon/statuses/547652296721436672</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Ftwitter.com%2Fafiskon%2Fstatuses%2F547652296721436672&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://twitter.com/afiskon">afiskon</yablogs:journal>
+      <description>Делаем метрики и мониторинг для Akka при помощи Kamon &lt;a href="http://t.co/69Yh2HOMyX" xhref="http://eax.me/akka-kamon/"&gt;eax.me/akka-kamon/&lt;/a&gt; &lt;ns0:tag name="akka" server="twitter.com"&gt;#akka&lt;/ns0:tag&gt; &lt;ns0:tag name="scala" server="twitter.com"&gt;#&lt;b&gt;scala&lt;/b&gt;&lt;/ns0:tag&gt; &lt;ns0:tag name="kamon" server="twitter.com"&gt;#kamon&lt;/ns0:tag&gt; &lt;ns0:tag name="datadog" server="twitter.com"&gt;#datadog&lt;/ns0:tag&gt; &lt;ns0:tag name="fprog" server="twitter.com"&gt;#fprog&lt;/ns0:tag&gt;</description>
+    </item>
+    <item>
+      <author>http://eax.me</author>
+      <yablogs:author url="http://eax.me">Записки программиста</yablogs:author>
+      <title>Делаем метрики и мониторинг для Akka при помощи Kamon</title>
+      <pubDate>Wed, 24 Dec 2014 06:44:53 GMT</pubDate>
+      <guid isPermaLink="false">http://eax.me/?p=34220</guid>
+      <link>http://feedproxy.google.com/~r/eaxme/~3/U63_k6D5lhM/</link>
+      <wfw:commentRss>//blogs.yandex.ru/search.rss?post=http%3A%2F%2Feax.me%2F%3Fp%3D34220&amp;ft=comments</wfw:commentRss>
+      <yablogs:journal url="http://eax.me">Записки программиста</yablogs:journal>
+      <description>
+
+Прочее, &lt;b&gt;Scala&lt;/b&gt;, Функциональное программирование</description>
+    </item>
+  </channel>
+</rss>

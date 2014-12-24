@@ -1,0 +1,113 @@
+(ns itfit.handler
+  (:require [itfit.dev :refer [browser-repl start-figwheel]]
+            [compojure.core :refer [GET POST defroutes]]
+            [compojure.route :refer [not-found resources]]
+            [ring.middleware.defaults :refer [site-defaults wrap-defaults]]
+            [ring.middleware.anti-forgery :as ring-anti-forgery]
+            [clojure.core.async :as async :refer (<! <!! >! >!! put! chan go go-loop)]
+            [ring.middleware.reload :as reload]
+            [selmer.parser :refer [render-file]]
+            [environ.core :refer [env]]
+            [prone.middleware :refer [wrap-exceptions]]
+            [taoensso.sente :as sente]
+            [clojure.pprint :as pp]
+            [itfit.orm :as orm]
+            [itfit.orm.users :as orm.users]
+            [org.httpkit.server :only [run-server] :as h]
+            [cemerick.friend :as friend]
+            [cemerick.friend [workflows :as workflows] [credentials :as creds]]
+            ))
+
+(let [{:keys [ch-recv send-fn ajax-post-fn ajax-get-or-ws-handshake-fn
+              connected-uids]} (sente/make-channel-socket! {})]
+  (def ring-ajax-post                ajax-post-fn)
+  (def ring-ajax-get-or-ws-handshake ajax-get-or-ws-handshake-fn)
+  (def ch-chsk                       ch-recv) ; ChannelSocket's receive channel
+  (def chsk-send!                    send-fn) ; ChannelSocket's send API fn
+  (def connected-uids                connected-uids) ; Watchable, read-only atom
+  )
+
+
+(defn- logf [fmt & xs] (println (apply format fmt xs)))
+
+(defmulti event-msg-handler :id) ; Dispatch on event-id
+;; Wrap for logging, catching, etc.:
+
+(defn     event-msg-handler* [{:as ev-msg :keys [id ?data event]}]
+                                        ;(logf "Event: %s" event)
+  (event-msg-handler ev-msg))
+
+(defmethod event-msg-handler :default ; Fallback
+  [{:as ev-msg :keys [event id ?data ring-req ?reply-fn send-fn]}]
+  (let [session (:session ring-req)
+        uid     (:uid     session)]
+                                        ;(logf "Unhandled event! %s" ev-msg)
+                                        ;(logf "Req %s" ring-req)
+    (when ?reply-fn
+      (?reply-fn {:umatched-event-as-echoed-from-from-server event}))))
+
+(defmethod event-msg-handler :feedback/send
+  [{:as ev-msg :keys [event id ?data ring-req ?reply-fn send-fn]}]
+  (logf "Req %s" ring-req)
+  (logf "Feedback/send %s" ?data)
+  )
+
+(defmethod event-msg-handler :data/index
+  [{:as ev-msg :keys [event id ?data ring-req ?reply-fn send-fn]}]
+  (logf "Req %s" ring-req)
+  (logf "Data/index %s" ?data)
+  (?reply-fn {:data 
+              (let [mdls (:model ?data)]
+                (zipmap 
+                 mdls
+                 (map #(orm/index-of %) mdls)))
+              })
+  )
+;; Add your (defmethod event-msg-handler <event-id> [ev-msg] <body>)s here...
+
+(sente/start-chsk-router! ch-chsk event-msg-handler*)
+
+(defn login!
+  "Here's where you'll add your server-side login/auth procedure (Friend, etc.).
+  In our simplified example we'll just always successfully authenticate the user
+  with whatever user-id they provided in the auth request."
+  [ring-request]
+  (logf "Login! %s" ring-request)
+  (let [{:keys [session params]} ring-request
+        identity (-> session :cemerick.friend/identity :current) ]
+    {:status 200 :body identity}))
+
+(defroutes routes
+  (GET "/" [] (render-file "templates/index.html" {:dev (env :dev?)}))
+  (GET "/chsk" req (ring-ajax-get-or-ws-handshake req))
+  (POST "/chsk" req (ring-ajax-post req))
+  (GET "/login_ok" req (login! req))
+  (resources "/")
+  (not-found "Not Found"))
+
+(defn auth [h]
+  (friend/authenticate h {:credential-fn (partial creds/bcrypt-credential-fn orm.users/get-user-by-email)
+                          :redirect-on-auth? false
+                          :allow-anon? true
+                          :default-landing-uri "/login_ok"
+                          :workflows [(workflows/interactive-form)]})
+  )
+
+(def app
+  (let [ring-defaults-config (assoc-in 
+                              site-defaults 
+                              [:security :anti-forgery]
+                              {:read-token (fn [req] 
+                                             (comment clojure.pprint/pprint req) 
+                                             (-> req :session :ring.middleware.anti-forgery/anti-forgery-token))}) 
+        prodhandler (wrap-defaults (auth #'routes) site-defaults)
+        devhandler (wrap-exceptions (wrap-defaults (reload/wrap-reload (auth #'routes)) ring-defaults-config))
+        handler (if (env :dev?) 
+                  devhandler 
+                  prodhandler)
+        ]
+    handler
+    ))
+
+(defn -main [& args]
+  (h/run-server app {:port 3000}))
