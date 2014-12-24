@@ -48,7 +48,7 @@
   (let [
         result-chan (chan)
         expected-results-count (count q)
-        parallels-count (min 10 expected-results-count)
+        parallels-count (min 3 expected-results-count)
         search-chan (chan parallels-count)]
     ;; Setup proc pool
     (dotimes [f parallels-count]
