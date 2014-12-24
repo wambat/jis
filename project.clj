@@ -16,7 +16,8 @@
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [http-kit "2.1.18"]
                  [com.github.kyleburton/clj-xpath "1.4.4"]
-                 [clojurewerkz/urly "1.0.0"]
+                 [org.bovinegenius/exploding-fish "0.3.4"]
+                 [org.clojure/data.json "0.2.5"]
                  ]
 
   :plugins [
@@ -38,6 +39,7 @@
                    :dependencies [[ring-mock "0.1.5"]
                                   [ring/ring-devel "1.3.1"]
                                   [midje "1.6.3"]
+                                  [http-kit.fake "0.2.1"]
                                   [pjstadig/humane-test-output "0.6.0"]]
 
                    :injections [(require 'pjstadig.humane-test-output)
