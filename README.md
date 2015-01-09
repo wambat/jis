@@ -1,6 +1,8 @@
 # jis
 
-A test project for jis
+A test http-kit application:
+
+multithreaded RSS downloader and result parser based on users's query
 
 ## Requirements
 
